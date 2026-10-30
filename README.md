@@ -107,7 +107,7 @@ Tests exercise account/auth flow and assessment → analysis → recommendations
 
 ## Deployment
 
-For a demonstration, deploy the static `frontend/dist` build to a static host, deploy the containerized FastAPI backend to a managed container host, and use managed PostgreSQL. Configure `VITE_API_URL`, `DATABASE_URL`, `SECRET_KEY`, and `CORS_ORIGINS` for the actual hostnames. Run Alembic migrations as a release step. Require HTTPS and replace demo credentials. No live deployment is included or claimed.
+See [`docs/deployment.md`](docs/deployment.md) for a walkthrough using Neon PostgreSQL, Render, and Vercel. Configure `VITE_API_URL`, `DATABASE_URL`, `SECRET_KEY`, and `CORS_ORIGINS` for the actual hostnames. The deployment is not live until these provider steps are completed.
 
 ## API
 
