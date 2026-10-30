@@ -1,0 +1,11 @@
+title,description,skills_text,difficulty,type,duration_hours,url
+Python Foundations,"Variables, functions, data structures and practical scripting.","Python programming fundamentals",beginner,course,8,https://docs.python.org/3/tutorial/
+SQL for Analysis,"Query relational data with joins, aggregation and window functions.","SQL database analytics",beginner,course,6,https://sqlbolt.com/
+Statistics Practice Lab,"Descriptive statistics, probability and inference with exercises.","Statistics data probability",intermediate,course,7,https://www.openintro.org/book/os/
+Machine Learning Study Path,"Supervised learning, model selection and evaluation exercises.","Python Machine Learning model evaluation",intermediate,course,12,https://scikit-learn.org/stable/user_guide.html
+Build a Data Dashboard,"Create a small dashboard and explain the choices behind its charts.","Data Visualization project dashboard",intermediate,project,5,https://public.tableau.com/app/learn/sample-data
+Neural Network Fundamentals,"Explore neural network training concepts and implementation.","Deep Learning neural networks",advanced,course,10,https://pytorch.org/tutorials/
+Web Portfolio Project,"Build and publish an accessible responsive portfolio.","HTML CSS JavaScript React web",intermediate,project,8,https://react.dev/learn
+Git Collaboration Exercise,"Practice branches, pull requests and conflict resolution.","Git and GitHub version control",beginner,project,3,https://docs.github.com/en/get-started/quickstart
+Cloud Deployment Lab,"Package a service and deploy it with a managed cloud workflow.","Cloud Computing deployment",intermediate,project,6,https://12factor.net/
+Algorithms Practice Set,"Solve and discuss common algorithm and data structure problems.","Data Structures and Algorithms Problem Solving",intermediate,project,8,https://visualgo.net/en

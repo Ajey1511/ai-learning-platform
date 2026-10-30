@@ -1,0 +1,47 @@
+role,skill,recommended_level,weight,minimum_level,industry_relevance
+Data Analyst,SQL,4,1.0,3,0.9
+Data Analyst,Statistics,4,1.0,3,0.9
+Data Analyst,Data Visualization,4,1.0,3,0.9
+Data Analyst,Python,3,0.8,2,0.75
+Data Analyst,Database Management,3,0.8,2,0.75
+Data Analyst,Problem Solving,3,0.8,2,0.75
+Data Scientist,Python,4,1.0,3,0.9
+Data Scientist,Statistics,4,1.0,3,0.9
+Data Scientist,Machine Learning,4,1.0,3,0.9
+Data Scientist,SQL,3,0.8,2,0.75
+Data Scientist,Data Visualization,3,0.8,2,0.75
+Data Scientist,Deep Learning,2,0.8,1,0.75
+Machine Learning Engineer,Python,5,1.0,4,0.9
+Machine Learning Engineer,Machine Learning,4,1.0,3,0.9
+Machine Learning Engineer,Deep Learning,4,1.0,3,0.9
+Machine Learning Engineer,Cloud Computing,3,0.8,2,0.75
+Machine Learning Engineer,Data Structures and Algorithms,4,1.0,3,0.9
+Machine Learning Engineer,Git and GitHub,3,0.8,2,0.75
+Python Developer,Python,5,1.0,4,0.9
+Python Developer,Data Structures and Algorithms,4,1.0,3,0.9
+Python Developer,SQL,3,0.8,2,0.75
+Python Developer,Git and GitHub,3,0.8,2,0.75
+Python Developer,Problem Solving,4,1.0,3,0.9
+Full-Stack Developer,HTML and CSS,4,1.0,3,0.9
+Full-Stack Developer,JavaScript,4,1.0,3,0.9
+Full-Stack Developer,React,4,1.0,3,0.9
+Full-Stack Developer,Python,3,0.8,2,0.75
+Full-Stack Developer,SQL,3,0.8,2,0.75
+Full-Stack Developer,Git and GitHub,3,0.8,2,0.75
+Backend Developer,Python,4,1.0,3,0.9
+Backend Developer,Java,3,0.8,2,0.75
+Backend Developer,SQL,4,1.0,3,0.9
+Backend Developer,Database Management,4,1.0,3,0.9
+Backend Developer,Cloud Computing,3,0.8,2,0.75
+Backend Developer,Git and GitHub,3,0.8,2,0.75
+Cloud Engineer,Cloud Computing,5,1.0,4,0.9
+Cloud Engineer,Python,3,0.8,2,0.75
+Cloud Engineer,Linux,3,0.8,2,0.75
+Cloud Engineer,Git and GitHub,3,0.8,2,0.75
+Cloud Engineer,Database Management,2,0.8,1,0.75
+AI Engineer,Python,5,1.0,4,0.9
+AI Engineer,Machine Learning,4,1.0,3,0.9
+AI Engineer,Deep Learning,4,1.0,3,0.9
+AI Engineer,Statistics,3,0.8,2,0.75
+AI Engineer,Cloud Computing,3,0.8,2,0.75
+AI Engineer,Data Structures and Algorithms,3,0.8,2,0.75

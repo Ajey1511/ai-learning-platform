@@ -1,0 +1,35 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-learning_platform}
+      POSTGRES_USER: ${POSTGRES_USER:-learning_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-local_only_change_me}
+    volumes: [postgres_data:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-learning_user} -d ${POSTGRES_DB:-learning_platform}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+  backend:
+    build: ./backend
+    environment:
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-learning_user}:${POSTGRES_PASSWORD:-local_only_change_me}@db:5432/${POSTGRES_DB:-learning_platform}
+      SECRET_KEY: ${SECRET_KEY:-local_only_change_this_secret_key}
+      CORS_ORIGINS: http://localhost:8080
+    ports: ["8000:8000"]
+    depends_on:
+      db: {condition: service_healthy}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+  frontend:
+    build:
+      context: ./frontend
+      args: {VITE_API_URL: http://localhost:8000/api/v1}
+    ports: ["8080:80"]
+    depends_on: [backend]
+volumes:
+  postgres_data:
