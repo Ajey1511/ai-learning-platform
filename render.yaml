@@ -1,15 +1,25 @@
+databases:
+  - name: skillpath-db
+    databaseName: learning_platform_83tv
+    user: skillpath_user
+    plan: free
+    region: oregon
+
 services:
   - type: web
     name: skillpath-api
     runtime: docker
     plan: free
+    region: oregon
     dockerfilePath: ./backend/Dockerfile
     dockerContext: ./backend
     healthCheckPath: /health
     envVars:
       - key: DATABASE_URL
-        sync: false
+        fromDatabase:
+          name: skillpath-db
+          property: connectionString
       - key: SECRET_KEY
         generateValue: true
       - key: CORS_ORIGINS
-        value: http://localhost:5173
+        value: https://ai-learning-platform-4t82.onrender.com
